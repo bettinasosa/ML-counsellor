@@ -1,0 +1,1 @@
+import {z} from "zod";export const ChatFormDataSchema = z.object({    message: z.string(),    threadId: z.string().optional(),    files: z.array(z.instanceof(File)).optional(),});
